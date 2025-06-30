@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: rgb(17, 1, 28);
+    color: white;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;    /*new learning*/
+    margin-top: 5rem;
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    background-color: rgb(17, 1, 28);
+    cursor: pointer;
+}
+
+
+/* Design score Board */
+.score-board
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#comp-score, 
+#user-score{
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Desing Message */
+
+.msg-container
+{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg{
+    background-color: rgb(17, 1, 28);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button{
+    font-size: 1rem;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 2px black;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Make it Responsive */
+
+@media only screen and (min-width :200px) and  (max-width: 500px) {
+    
+    .choices{
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .score-board{
+        margin-top: 1rem;
+    }
+    
+    .score{
+        font-size: 2rem;
+    }
+
+    .msg-container{
+        margin-top: 2rem;
+    }
+
+    #msg{
+        font-size: 1.5rem;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    button{
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+
+    footer{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }
